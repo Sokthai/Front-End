@@ -1,5 +1,44 @@
-body{
-    background-color: pink;
-}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    background-color: hsl(240, 78%, 98%);    
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    font-weight: 700;
+    width: 1440px;
+    border: 1px solid pink;
+    padding: 0;
+    margin: 0;
+    margin: auto;
+}
+
+#top{
+    float: right;
+
+}
+
+span{
+    font-size: 30px;
+    color: hsl(233, 13%, 49%);
+    text-align: center;
+    margin: auto;
+
+}
+
+.form{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+ 
+}
+
+.onSale{
+    border: 1px solid red;
+    align-content: center;
+    justify-content: center;
+}
