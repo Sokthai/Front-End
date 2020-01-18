@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .navbar{
+    background: green;
+    overflow: auto;
+}
+
+.navbar a{
+    font-family: "Orbitron";
+    font-size: 25px;
+    padding: 30px 20px;
+    color: white;
+    text-decoration: none;
+    float: left;
+}
+
+
+
+.navbar a:hover{
+    background: gray;
+}
+
+.navbar a:last-child{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .navbar a:not(:first-child){
+        display: none;
+    }
+    
+    .navbar a:last-child{
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar.responsive a{
+        float: none;
+        display: block;
+    }
+} */
+
+
+.navbar{
+    background: green;
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    /* display: block; */
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: "Orbitron";
+    font-size: 25px;
+}
+.navbar a:hover{
+    background: gray;
+    transform: scale(1.01);
+}
+
+.navbar a:last-child{
+    display: none;
+}
+
+
+
+
+
+.remember span:before{
+    content: "";
+    border: 2px solid gray;
+    display: inline-block;
+    vertical-align: center;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+}
+
+
+.remember input[type="checkbox"]:checked + span::before{
+    border-color: white;
+    background: red;
+    box-shadow: 0 0 0 3px red;
+}
+input[type="checkbox"]:checked + span{
+    text-decoration: underline;
+}
+
+
+.remember input[type="checkbox"]{
+    
+    /* border: 3px;
+    border-color: green; */
+    /* clip: rect(0 0 0 0); */
+    /* height: 1px;
+    margin: 1px; */
+    /* overflow: hidden; */
+    /* padding: 0; */
+    /* position: absolute;  */
+    width: 1px;
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 700px){
+    .navbar a:not(:first-child){
+        display: none;
+    }
+
+    .navbar a:last-child{
+        display:block;
+        float: right;
+    }
+
+    .navbar.responsive a:last-child{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar.responsive a{
+        display: block;
+        float: none;
+    }
+
+}

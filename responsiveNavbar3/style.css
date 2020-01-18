@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.topNavbar{
+    background: rgb(37, 37, 37);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+
+.topNavbar h2{
+    font-family: "Kaushan Script";
+    color: white;
+    
+}
+
+.topNavbar > div a{
+    color : #aaa;
+    /* float: left; */
+    
+    font-family: "Orbitron";
+    font-weight: bolder;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    font-size: 25px;
+
+    
+    
+    
+}
+
+
+.topNavbar > div a:hover{
+    transform: scale(1.2);
+    color: white;
+}
+.topNavbar > div a:last-child{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .topNavbar > div a:last-child{
+        display: block;
+    }
+    
+    .topNavbar > div a:not(:last-child){
+        display: none;
+    }
+
+    .topNavbar .navbar{
+        flex-direction: column;
+    }
+      
+    .navbar.responsive{
+        flex-direction: column;
+
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a{
+        display: block;
+        text-align: left;
+      }
+
+
+}
+

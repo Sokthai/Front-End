@@ -1,0 +1,831 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #FAFAFA;
+}
+
+/* Header */
+.header {
+  /* display: flex; */
+  
+  margin: 0;
+  padding: 2.5rem;
+  background: linear-gradient(to top, rgba(0, 194, 250, .1), rgba(0, 194, 250, .05)), url(../img/bg-hero-desktop.svg) center no-repeat;
+  background-size: cover;
+  border: 1px solid green;
+
+}
+
+.cover-color{
+  border: 1px solid blue;
+}
+
+
+.navbar {
+  display: flex;
+  margin: 0 auto;
+  width: 92.5%;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+  
+}
+
+.hero-logo {
+  width: 18rem;
+  height: 2.8rem;
+}
+
+.hero-btn {
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: .2rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5rem;
+  border: none;
+  background: white;
+  color: #FF52C1;
+  padding: 1.2rem 4rem;
+  box-shadow: 0px 1px 5px -1px #FF52C1;
+  outline: none;
+  cursor: pointer;
+  border: solid #FF52C1 .13rem;
+  transition: all .5s;
+  animation: movebottom 1.5s;
+}
+
+.hero-btn:active {
+  transform: translateY(.7rem);
+}
+
+.hero-btn:hover {
+  border: .13rem solid #15C39A;
+  color: #15C39A;
+  box-shadow: 0px 1px 5px -1px #15C39A;
+}
+
+@keyframes movebottom {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes movetop {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+@keyframes moveleft {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 6em auto;
+  width: 92.5%;
+  border: 1px solid purple;
+}
+
+.header-content > div{
+  border: 1px solid yellow;
+}
+.header-description {
+  margin-right: 3rem;
+  margin-top: 8rem;
+  animation: moveright 1.5s;
+}
+
+.description-heading {
+  font-size: 3.8rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 5.5rem;
+  padding-bottom: 2.3rem;
+  font-weight: 800;
+  margin: 0;
+  color: #00252E;
+}
+
+.description-para {
+  font-size: 1.7rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 3rem;
+  margin: 0;
+  font-weight: 300;
+  color: #00252E;
+}
+
+.header-btn {
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .2rem;
+  border-radius: 5rem;
+  border: none;
+  background: #FF52C1;
+  color: #fff;
+  padding: 1.4rem 5rem;
+  box-shadow: 0px 1px 5px -1px #FF52C1;
+  outline: none;
+  cursor: pointer;
+  border: solid #FF52C1 .13rem;
+  transition: all .7s;
+  margin-top: 3rem;
+  animation: movetop 1.5s;
+}
+
+.header-btn:active {
+  transform: translateY(.7rem);
+}
+
+.header-btn:hover {
+  background-color: #15C39A;
+  border: .13rem solid #15C39A;
+  color: #fff;
+  box-shadow: 0px 1px 5px -1px #15C39A;
+}
+
+.mockups {
+  padding-top: 8rem;
+  width: 62rem;
+  animation: moveleft 1.5s;
+}
+
+/* End of Header */
+
+
+
+
+/* User-section */
+.users {
+  background-color: #fff;
+  padding: 2.5rem 7rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.card > div{
+  border: 1px solid orange;
+}
+.card1 {
+  margin-top: 10rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-heading {
+  font-family: 'Poppins'sans-serif;
+  font-size: 2.5rem;
+  color: #282D31;
+  margin: 0;
+  padding: 2rem 0 .1rem 4rem;
+}
+
+.card-para {
+  font-size: 1.85rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  color: #828F9B;
+  padding: 0 0 1.2rem 4rem;
+}
+
+.card-img {
+  padding: 6rem 8rem 4rem 8rem;
+}
+
+.card2 {
+  margin-top: 8rem;
+}
+
+.img2 {
+  order: -1;
+  padding-left: 10rem;
+}
+
+.heading-2 {
+  padding-left: 5rem;
+}
+
+.para-2 {
+  padding: 0 6rem 0 5rem;
+}
+
+.card3 {
+  margin-top: 8rem;
+}
+
+/* End of user-section */
+
+
+
+
+/* Footer */
+
+footer{
+  border: 1px solid blue;
+}
+
+
+.footer-container {
+  background: linear-gradient(to bottom, #ffffff 18%, #00252E 15%, #00252E 15%, #00252E 95%, #00252E 100%);
+  padding-top: 15rem;
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto 2rem auto;
+  padding: 35px 25px 35px;
+  width: 700px;
+  box-shadow: 0px -3px 10px -1px #dfdfdf;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.footer-heading {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  color: #2A2A2A;
+  margin: 1.2rem 4rem;
+}
+
+.footer-btn {
+  font-weight: 400;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  border-radius: 5rem;
+  border: none;
+  background: #FE75A9;
+  color: #fff;
+  padding: 1.4rem 4.5rem;
+  box-shadow: 0px 1px 5px -1px #FE75A9;
+  outline: none;
+  cursor: pointer;
+  border: solid #FE75A9 .13rem;
+  margin: 1rem 0;
+  transition: all .3s;
+}
+
+.footer-btn:hover {
+  background: #FF52C1;
+}
+
+.footer-btn:active {
+  transform: translateY(.7rem);
+}
+
+.main-footer {
+  margin: 10rem 10rem 0 10rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo {
+  margin: 0 0 3rem 8rem;
+}
+
+.listwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-center;
+}
+
+.lists {
+  display: flex;
+  align-items: center;
+  width: 45rem;
+}
+
+.lists img {
+  width: 2.5rem;
+  height: 2.6rem;
+}
+
+.lists p {
+  font-size: 1.7rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+
+.footerlist a {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  padding-top: 2rem;
+}
+
+.footerlist li {
+  list-style: none;
+}
+
+.list2 li {
+  margin-top: 4.1rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.2rem;
+}
+
+.list3 li {
+  margin-top: 4.1rem;
+  font-size: 1.7rem;
+  padding-bottom: 1.2rem;
+}
+
+.social-icons-list {
+  display: flex;
+  margin-top: 12rem;
+}
+
+.social-link {
+  margin-left: 3rem;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.copyright-text {
+  font-family: 'Merriweather';
+  font-size: 1.5rem;
+  color: #87A595;
+  margin-top: 2.2rem;
+}
+
+.right-text p {
+  font-family: 'Merriweather';
+  font-size: 1.6rem;
+  color: #87A595;
+}
+
+.right-text a {
+  font-family: 'Sacramento';
+  font-size: 4rem;
+  text-decoration: none;
+  color: #15C39A;
+  text-shadow: 4px 4px 4px #15C39A;
+}
+
+.right-text i {
+  color: red;
+  transition: transform .5s;
+}
+
+.right-text i:hover {
+  transform: rotate(720deg);
+}
+
+/* End of Footer */
+/* Responsive Design */
+@media screen and (max-width: 1250px) {
+  .mockups {
+    width: 50rem;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 1181px) {
+  .list2 li {
+    margin-top: 2.9rem;
+    font-size: 1.7rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .copyright-text {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .right-text p {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 973px) {
+  .heading-2, .para-2 {
+    padding-left: 0;
+  }
+
+  .main-footer {
+    margin: 0;
+    padding: 50px 0 20px 0;
+  }
+
+  .card-img {
+    padding: 6rem 2rem 4rem 2rem;
+  }
+
+  .card-img.img2 {
+    padding-right: 2rem;
+  }
+
+  .card1.card-heading {
+    padding-top: 2rem;
+  }
+
+  .card3.card-heading {
+    padding-top: 2rem;
+  }
+
+  .contact-list {
+    margin-top: 0;
+    padding-left: 3rem;
+  }
+
+  .contact-list li {
+    margin-top: 3rem;
+  }
+
+  .details-list {
+    padding-left: 2rem;
+    padding-right: 5rem;
+  }
+
+  .aboutus-list {
+    padding-left: 0;
+  }
+
+  .social-icons-list {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 938px) {
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-btn {
+    margin-left: 30%;
+  }
+
+  .description-heading {
+    text-align: center;
+  }
+
+  .description-para {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 818px) {
+  .footer-links {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .list2.footerlist {
+    padding: 2rem 0 2rem 3rem;
+  }
+
+  .social-icons-list {
+    margin-top: 3rem;
+  }
+
+  .footer-box {
+    width: 450px;
+    padding: 30px 5px 20px;
+  }
+
+  .footer-heading {
+    font-size: 2.7rem;
+    margin: .2rem 1rem;
+  }
+
+  .footer-btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1.2rem 3.8rem;
+  }
+
+  .copyright-text {
+    font-size: 1.5rem;
+  }
+
+  .right-text p {
+    font-size: 1.5rem;
+  }
+
+  .right-text a {
+    font-family: 'Sacramento';
+    font-size: 4rem;
+    text-decoration: none;
+    color: #15C39A;
+    text-shadow: 4px 4px 4px #15C39A;
+  }
+
+  .right-text a {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .card1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-content {
+    order: 1;
+  }
+
+  .card-heading {
+    text-align: center;
+  }
+
+  .card-para {
+    text-align: center;
+    padding: 0 5rem 5rem 5rem;
+  }
+
+  .card2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-img img {
+    width: 200px;
+  }
+
+  .users {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .header-btn {
+    margin-left: 24%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2.8rem;
+  }
+
+  .header-content {
+    margin: .2rem auto;
+  }
+
+  .mockups {
+    width: 40rem;
+  }
+
+  .description-heading {
+    font-size: 3rem;
+  }
+
+  .header-btn {
+    font-size: 1.2rem;
+    padding: 1.3rem 2.5rem;
+    margin-left: 32%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .lists {
+    display: flex;
+    align-items: center;
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .mockups {
+    width: 30rem;
+    padding-top: 7rem;
+  }
+
+  .header-btn {
+    margin-left: 26%;
+  }
+
+  .footer-box {
+    width: 250px;
+  }
+
+  .footer-heading {
+    font-size: 1.8rem;
+    margin: .2rem 5rem;
+  }
+
+  .footer-btn {
+    font-size: 1rem;
+    padding: 1rem 1.8rem;
+  }
+
+  .listwrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copyright-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+.hero-logo {
+  width: 16rem;
+height: 2.5rem;
+}
+
+.hero-btn {
+  font-size: .8rem;
+    padding: .8rem 2rem;
+    letter-spacing: .2rem;
+}
+
+.description-heading {
+  font-size: 2rem;
+  letter-spacing: .19rem;
+}
+
+.description-para {
+  font-size: 1.2rem;
+  letter-spacing: .2rem;
+}
+
+.header-content {
+  margin-right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-btn {
+  margin-left: 25%;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  padding: 1rem 1.5rem;
+}
+
+.mockups {
+  width: 25rem;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-img img {
+  width: 15rem;
+}
+
+.card-heading {
+  padding-left: .2rem;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+}
+
+.card-para {
+  font-size: 1.29rem;
+  letter-spacing: .1rem;
+}
+
+.footer-box {
+  width: 25rem;
+}
+
+.f-logo {
+  width: 18rem;
+  margin-left: 3.7rem;
+}
+
+.details-list {
+    padding-right: .1rem;
+    padding-left: .1rem;
+}
+
+.details-list p {
+  font-size: 1rem;
+  padding-left: .3rem;
+}
+
+.lists img {
+  width: 1.2rem;
+  height: 1.3rem;
+  padding-left: .1rem;
+}
+
+.aboutus-list a {
+  font-size: 1rem;
+}
+
+.contact-list a {
+  font-size: 1rem;
+}
+
+.right-text p {
+  font-size: 1.3rem;
+}
+
+.right-text a {
+  font-size: 2.5rem;
+}
+
+.copyright {
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width: 370px) {
+  .header-btn {
+     margin-left: 16.2%;
+  }
+
+  .f-logo {
+    margin-left: 0;
+  }
+}
+
+
+/* End of Responsive Design */

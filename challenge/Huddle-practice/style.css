@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --border-width : 2px;
+    --border: var(--border-width) solid;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #00252E;
+
+}
+
+
+/* head */
+.head{
+    border: var(--border) green;
+    padding: 25px;
+    background: linear-gradient(to top, rgba(0, 194, 250, .1), rgba(0, 194, 250, .05)), url(../img/bg-hero-desktop.svg) center no-repeat;
+    background-size: cover;
+}
+
+.header {
+    border: var(--border) blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: var(--border) red;
+    width: 92.5%;
+    padding: 10px;
+}
+.header-logo img{
+    width: 10em;
+}
+
+.header-content{
+    border: var(--border) purple;
+    display: flex;
+    flex-direction: row;
+    width: 92.5%;
+}
+
+.header-description{
+    display: flex;
+    flex-direction: column;
+    border: var(--border) purple;
+    /* width: 25rem; */
+}
+
+.header-img{
+    border: var(--border) orange;
+}
+
+.header-img img{
+    width: 40em;
+    padding: 50px;
+    animation: moveright 1.5s;
+}
+
+a{
+    box-shadow: 0px 1px 5px -1px #FF52C1;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 30px;
+    border-radius: 5em;
+    color: #FF52C1;
+    text-align: center;
+    transition: all .5s;
+    text-transform: capitalize;
+}
+
+.btn-hero{
+    animation: movedown 1.5s;
+}
+
+.btn-hero:hover{
+    color: #15C39A;
+    box-shadow: 0px 1px 5px -1px #15C39A;
+
+}
+
+.btn-header{
+    font-size: 1em;
+    width: 14em;
+    color: white;
+    background: #FF52C1;
+    animation: moveleft 1.5s;
+}
+
+.btn-header:hover{
+    background: #15C39A;
+    box-shadow: 0px 1px 5px -1px #15C39A;
+}
+
+.header-description{
+    font-family: "Merriweather";
+    padding: 10px;
+    color: #00252E;
+}
+
+.header-description h2{
+    font-size: 2em;
+}
+
+.header-description p{
+    font-size: 1em;
+    text-align: justify;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 0;
+        transform: translateY(-20rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes moveleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes moveright{
+    0%{
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+/* End of head */
+
+/* card */
+.card-main{
+    border: var(--border) orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding :25px;
+}
+
+.card{
+    display: flex;
+    width: 92.5%;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 1px 5px -1px #FF52C1;
+    padding: 20px;
+}
+
+.card-content{
+    border: var(--border) red;
+    height: 12em;
+    padding: 20px;
+
+}
+
+.card-content h2{
+    font-size: 2rem;
+}
+
+.card-content p{
+    color: rgba(10, 24, 27, 0.651)
+}
+
+.card-img img{
+    width: 20em;
+    height: 15em;
+}
+
+
+
+.footer{
+    /* background: orangered; */
+    
+}
+
+.footer > div:first-child{
+    /* background:  orchid; */
+    text-align: center;
+    padding-top: 10em;
+    padding-bottom: 5em;
+}
+.footer h2{
+    font-size: 2.2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.footer > div:last-child{
+    
+
+    background-image: url(img/bg-footer-top-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 2000px 600px;
+    color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30em;
+    /* padding: 50px; */
+}
+
+.footer >div:last-child > div{
+    /* padding: 10em 10em; */
+    /* border: 1px solid red; */
+    width: 30%;
+    height: 50%;
+    line-height: 1.5em;
+
+}
+
+
+.footer-left img{
+    margin-bottom : 2em;
+}
+
+.footer-left i{
+    font-size: 2em;
+}
+
+.footer-left i{
+    margin-right: 20px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.footer-left i:hover{
+    color: rgb(105, 134, 60);
+}
+
+
+.phone{
+    /* border: 10px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+input[type=email]{
+    padding: 15px;
+    width: 18em;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .card .card-content{
+        /* border: 5px solid blue; */
+    }
+
+    .card-img img{
+        font-size: .8em;
+    }
+    .card-content h2{
+        font-size: 1.5em;
+    }
+    
+    .card-content p{
+        font-size: .9em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .card{
+        /* flex-direction: column; */
+        padding: 20px;
+        /* border: 5px solid red; */
+
+    }
+
+    .card-content h2{
+        font-size: 1.5em;
+    }
+    
+    .card-content p{
+        font-size: .8em;
+    }
+
+    .card:nth-child(odd) .card-img{
+        margin-top: 20px;
+    }
+    /* .card-img img{
+        width: 20em;
+        height: 15em;
+    } */
+}
+
+@media screen and (max-width: 700px){
+    .card{
+        /* flex-direction: column; */
+        padding: 20px;
+        /* border: 5px solid green; */
+
+    }
+    .header-content{
+        flex-direction: column;
+    }
+    .header-img img{
+        padding: 0;
+        width: 100%;
+    }
+    .header-description{
+        align-items: center;
+    }
+
+    .card-content h2{
+        font-size: 1.2em;
+    }
+    
+    .card-content p{
+        font-size: .7em;
+    }
+
+    .card-img img{
+        width: 15em;
+        height: 10em;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .card{
+        flex-direction: column;
+        padding: 20px;
+        /* border: 5px solid pink; */
+        
+    }
+
+    .card-content h2{
+        font-size: 1.5em;
+        text-align: center;
+
+    }
+    
+    .card-content p{
+        font-size: .9em;
+        text-align: justify;
+
+    }
+}
+
+
+

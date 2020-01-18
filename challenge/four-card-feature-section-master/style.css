@@ -1,0 +1,171 @@
+.he1 {
+    text-align: center;
+    margin-top: 99px;
+    margin-bottom: 0px;
+    font-size: 40px;
+    text-decoration-color: #808080;
+    padding: 0px;
+    color: #808080;
+  }
+  
+  .he2 {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    font-size: 43px;
+    text-decoration-color: black;
+  }
+  
+  .pra {
+    font-family: 'Poppins';
+    text-align: center;
+    font-size: 19px;
+    color: #808080;
+  }
+  
+  body {
+    font-family: 'Poppins';
+    background-color: #f8f8f8;
+  }
+  
+  .teambuilder {
+    border: 1px;
+    margin: 2px;
+    padding-left: 2px;
+    height: 213px;
+    width: 379px;
+    border-radius: 1% / 8%;
+    position: relative;
+    left: 773px;
+    top: 52px;
+    background-color: white;
+  }
+  
+  .teambuilder hr {
+    border-top: 1px solid;
+    border-top-color: red;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .teambuilder h3 {
+    margin-left: 22px;
+    font-size: 22px;
+  }
+  
+  .teambuilder p {
+    margin-left: 22px;
+    color: #808080;
+    font-size: 16px;
+  }
+  
+  .teambuilder img {
+    margin-left: 273px;
+  }
+  
+  .calculator {
+    border: 1px;
+    border-radius: 1% / 5%;
+    margin: 2px;
+    padding-left: 2px;
+    height: 213px;
+    width: 379px;;
+    position: relative;
+    left: 1196px;
+    top: -29px;
+    background-color: white;
+  }
+  
+  .calculator hr {
+    border-top: 1px solid;
+    border-top-color: blue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calculator h3 {
+    margin-left: 22px;
+    font-size: 22px;
+  }
+  
+  .calculator p {
+    margin-left: 22px;
+    color: #808080;
+    font-size: 16px;
+  }
+  
+  .calculator img {
+    margin-left: 273px;
+  }
+  
+  
+  .upervisor {
+    border: 1px;
+    border-radius: 1% / 5%;
+    margin: 2px;
+    padding-left: 2px;
+    height: 213px;
+    width: 379px;
+    position: relative;
+    left:350px;
+    bottom: 243px;
+    background-color: white;
+  }
+  
+  .upervisor hr {
+    border-top: 1px solid;
+    border-top-color: #3fc5f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .upervisor h3 {
+    margin-left: 22px;
+    font-size: 22px;
+  }
+  
+  .upervisor p {
+    margin-left: 22px;
+    color: #808080;
+    font-size: 16px;
+  }
+  
+  .upervisor img {
+    margin-left: 273px;
+  }
+  
+  
+  .karma {
+    border: 1px;
+    border-radius: 1% / 5%;
+    margin: 2px;
+    padding-left: 2px;
+    height: 213px;
+    width: 379px;
+    position: absolute;
+    left: 783px;
+    bottom: 165px;
+    background-color: white;
+  }
+  
+  .karma hr {
+    border-top: 1px solid;
+    border-top-color: orange;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .karma h3 {
+    margin-left: 22px;
+    font-size: 22px;
+  }
+  
+  .karma p {
+    margin-left: 22px;
+    color: #808080;
+    font-size: 16px;
+  }
+  
+  .karma img {
+    margin-left: 273px;
+  }

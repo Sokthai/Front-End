@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f2ba3881e.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="topNavbar">
+        <span class="logo"><img src="logo.png" alt=""></span>
+        <div class="navbar">
+            <a href="">Nav</a>
+            <a href="">Nav</a>
+            <a href="">Nav</a>
+            <a href="">Nav</a>
+            <a href="">Nav</a>
+            <a href="javascript:void(0);" class="icon" onClick="navBar()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="s1.jpeg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="s2.jpg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="s3.jpg" alt="">
+        </div>
+
+        <div class="slide">
+            <img src="s4.jpg" alt="">
+        </div>
+
+        <a onClick="slide(-1)" class="prev"><i class="fas fa-caret-left"></i></a>
+        <a onClick="slide(1)" class="next"><i class="fas fa-caret-right"></i></a>
+    </div>
+
+
+    <div class="content">
+        <div class="text">
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="video">
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/x36P30CRxvY?controls=1?autoplay=1 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="boxMain">
+        <div class="boxContainer">
+            <div class="boxContent">
+                <div>
+                    <h1>Box 1</h1>
+                    <div class="box">
+                        <h2>Lorem Ipsum has been the industry's standard</h2>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxContent">
+                <div>
+                    <h1>Box 2</h1>
+                    <div class="box">
+                        <h2>Lorem Ipsum has been the industry's standard</h2>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxContent">
+                <div>
+                    <h1>Box 3</h1>
+                    <div class="box">
+                        <h2>Lorem Ipsum has been the industry's standard</h2>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s,the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <a href="">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+        <h2>&#9400; 2017 Copyright</h2>
+        <div>
+                <span>Links to sites</span>
+                <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com"><i class="fab fa-github"></i></a>
+                <a href="https://pinterest.com"> <i class="fab fa-pinterest"></i></a>
+        </div>
+    </footer>
+  
+    <script>
+        let index = 0;
+        slide(1);
+        function slide(i){
+
+            let s = document.getElementsByClassName("slide");
+            index += i;
+            index %= 4;
+            for (let j = 0 ; j < s.length; j++){
+                s[j].style.display = "none";
+            }
+            s[index].style.display= "block";
+        }
+        
+    </script>
+</body>
+</html>

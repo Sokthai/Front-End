@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+
+<style>
+    body{
+        background: green;
+    }
+    label span::before{
+        content: "";
+        border: 2px solid gray;
+        width: .6em;
+        height: .6em;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right : .5em;
+    }
+
+    label input[type="checkbox"]:checked + span::before{
+        border-color: #fafafa;
+        box-shadow: 0 0 0 2px red;
+        background-color: red;
+        border-radius: 2px;
+    }
+
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+            <div class="login">
+                    <div class="content">
+                            <h1>Log In</h1>
+ 
+
+                            <div>
+                                    <label class="remember" for="remember">
+                                        <input type="checkbox" id="remember" />
+                                        <span>Remember me</span>
+                                    </label>
+
+                                    <span class="forget">
+                                        <a href="#">Forgot password?</a>
+                                    </span>
+                                    <span class="clearfix"></span>
+                                </div>
+
+                    </div>
+                </div>
+
+        <div class="register">
+            <div class="content">
+
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+
+
+</html>

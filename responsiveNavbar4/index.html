@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar" id="myNav">
+        <a href=""><img src="logo.png" alt="" style="width: 30px; height: 25px"></a>
+        <a href="" class="active">Home</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="javascript:void(0)" class="icon" onClick="navbar()"><i class="fa fa-bars"></i></a>
+    </div>
+
+    <div class="remember">
+        <label for="remember">
+            <input type="checkbox" name="rem" id="remember"><span>Remember Me</span>
+        </label>
+        <a href="">Forget Password?</a>
+    </div>
+
+
+    <script>
+
+        function navbar(){
+            let nav = document.getElementById("myNav");
+            if (nav.className == "navbar"){
+                nav.className += " responsive";
+            }else{
+                nav.className = "navbar";
+            }
+        }
+       
+    </script>
+</body>
+</html>
