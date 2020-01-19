@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+:root {
+    --main-bg-color: #9C27B0;
+    --border: 0px solid yellow;
+  }
 
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution { 
+    padding-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
 
 body{
     background-color: hsl(240, 78%, 98%);    
@@ -10,35 +19,101 @@ body{
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     width: 1440px;
-    border: 1px solid pink;
     padding: 0;
     margin: 0;
     margin: auto;
+    color: hsl(232, 13%, 33%);
 }
 
-#top{
-    float: right;
+.onSalePage{
+    border: var(--border);
+}
 
+.pricing{
+    border: var(--border);
+    width: 250px;
+    height: 150px;
+    vertical-align: center;
+
+}
+
+.top{
+    /* border: 2px solid blue; */
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
 }
 
 span{
     font-size: 30px;
     color: hsl(233, 13%, 49%);
     text-align: center;
-    margin: auto;
+  }
 
+p{
+    padding-top: 25px;
 }
 
 .form{
-    border: 1px solid green;
+    /* border: 2px solid green; */
     display: flex;
     flex-direction: row;
-    width: 80%;
  
 }
 
 .onSale{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     align-content: center;
     justify-content: center;
+    width: 34%;
+}
+
+.onSale > ul{
+    list-style-type: none;
+    /* border: 5px solid blue; */
+    width: 70%;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    
+}
+
+li:last-child{
+    color: hsl(233, 13%, 49%);
+    /* border: 1px solid hsl(232, 13%, 33%); */
+    margin: 40px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+li:first-child{
+    border: none;
+}
+
+
+li:nth-child(2){
+    font-size: 60px;
+}
+
+li{
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+
+
+.active{
+    background-color: hsl(237, 63%, 64%);
+    border-radius: 20px;
+    color: white;
+    align-self: center;
+}
+
+.active li:last-child{
+    color: white;
+    border: 1px solid white;
 }
