@@ -53,9 +53,7 @@ span{
     text-align: center;
   }
 
-p{
-    padding-top: 25px;
-}
+
 
 .form{
     /* border: 2px solid green; */
@@ -69,6 +67,9 @@ p{
     align-content: center;
     justify-content: center;
     width: 34%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
 }
 
 .onSale > ul{
@@ -83,7 +84,7 @@ p{
 
 li:last-child{
     color: hsl(233, 13%, 49%);
-    /* border: 1px solid hsl(232, 13%, 33%); */
+    border: 1px solid hsl(234, 14%, 74%);
     margin: 40px 0;
     padding: 10px;
     border-radius: 5px;
@@ -111,9 +112,76 @@ li{
     border-radius: 20px;
     color: white;
     align-self: center;
+    transform: scaleY(1.09);
 }
 
 .active li:last-child{
     color: white;
     border: 1px solid white;
 }
+
+.toggle{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleLabel{
+    border: 1px solid blue;
+    position: relative;
+    width: 4rem;
+    height: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+
+
+.slider{
+    position: absolute;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.slider:before{
+    position: absolute;
+    content: "";
+    font-size: .5em;
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    bottom: 5px;
+    left: 5px;
+    transition: .4s;
+    -webkit-transition: .4s;
+
+}
+
+/* .toggleLabel input[type=checkbox]:checked + .toggleLabel span:before{
+ transform:translateX(1.3rem);
+    -webkit-transform: translateX(1.3rem);
+    -ms-transform: translateX(1.3rem);
+} */
+
+.toggleCheckbox:checked + .slider:before{
+    transform:translateX(1.3rem);
+    -webkit-transform: translateX(1.3rem);
+    -ms-transform: translateX(1.3rem);
+    background-color: lightskyblue;
+}
+
+
+.toggle p{
+    display: inline-block;
+    border: 1px solid tomato;
+
+ }
