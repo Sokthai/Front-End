@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree';
+    color: #4C545D;
+}
+
+
+.clipboard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+ /* header styling */
+.header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-size: 100% 100%;
+    text-align: center;
+    width: 100%;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+.logo{
+    margin: 80px 0;
+}
+
+.quote{
+    width: 55%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.quote > h1{
+    padding: 0;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.quote p{
+    font-size: 1.4rem;
+}
+
+ p{
+    color: #9FABB9;
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+.btn{
+    padding: 15px 45px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+.ios{
+   background-color: #26BAA6;
+   box-shadow: 2px 1px 4px #1f9886;
+   margin-right: 30px;
+}
+.mac{
+    background-color: #6173FF;
+    box-shadow: 2px 1px 4px #475dff;
+
+}
+
+.ios:hover{
+    background-color:  hsl(171, 59%, 54%);
+}
+
+.mac:hover{
+    background-color:  hsl(233, 69%, 72%);
+}
+
+
+/* center styling */
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    padding: 50px 0;
+    text-align: center;
+    width: 70%;
+}
+
+.content > p{
+    font-size: 1.2em;
+}
+
+.contentLogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.contentImg{
+    width: 50%;
+    height: 100%;
+}
+
+.contentImg > img{
+    width: 100%;
+}
+
+.contentMessage {
+    padding-left: 5em;
+}
+
+.message{
+    width: 55%;
+}
+.message > h1{
+    font-size: 1.5em;
+    padding-top: 30px;
+}
+
+.message > p{
+    font-size: 1.05em;
+}
+
+/* end center styling */
+
+/* access styling */
+.access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.access > div:first-child{
+    text-align: center;
+    width: 45%;
+    padding: 30px 0 50px 0;
+
+}
+
+.access > div:last-child{
+    width: 100%;
+    padding: 0;
+}
+
+.access > div > p{
+    font-size: 1.2em;
+}
+
+.access img{
+    width: 45em;
+    padding: 0;
+    margin: 0;
+    display: block;
+   margin: auto;
+}
+
+/* end access styling */
+
+
+/* workflow styling */
+.workflow{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.workflow-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.workflow-chart{
+    width: 25%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.workflow-chart > img{
+    height: 2.5em;
+}
+
+.workflow-chart > h1{
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+}
+
+
+.workflow-chart > p{
+    font-size: .9em;
+}
+
+.content-wrapper{
+    padding: 50px 0;
+}
+.content-wrapper h1{
+    font-size: 1.5em;
+}
+
+.content-wrapper p{
+    font-size: 1.1em;
+
+}
+
+/* end workflow */
+
+/* company styling */
+.company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.companyLogo{
+    display: flex;
+    padding: 150px 0;
+    width: 75%;
+    justify-content: space-evenly;
+}
+.companyLogo > div{
+    width: 170px;
+    margin: auto;    
+}
+
+.companyLogo img{
+    width: 90%;
+}
+
+.company > .quote{
+    width: 50%;
+}
+
+/* end company */
+
+/* footer styling */
+.footer{
+    /* background-color: teal; */
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: 100px 0 30px 0;
+}
+
+.footerLogo{
+    margin-right: 10%;
+    /* border: 1px solid blue; */
+
+}
+
+.footerLogo > img{
+    width: 45px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid blue; */
+}
+
+
+.media {
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    margin-left: 50px;
+    /* border: 1px solid green; */
+}
+
+.media img:nth-child(2){
+    padding: 0 20px;
+}
+
+
+.contact {
+    width: 50%;
+    height: 100%;
+}
+
+.contact > div{
+    display: inline-block;
+    width: 25%;
+    font-size: 1.2em;
+    /* border: 1px solid green; */
+}
+
+.contact a{
+    display: block;
+    color: #4C545D;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+.contact a:hover{
+    color: #26BAA6;
+}
+
+
+
+.contact ul{
+    list-style: none;
+}
+
+/* end footer */
+
+@media screen and (max-width: 1000px){
+    .contentLogo, .contentMessage, .message{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    .contentImg{
+        width: 70%;
+    }
+    .workflow-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .companyLogo{
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .companyLogo > div{
+        padding: 35px;
+        justify-content: space-between;
+    }
+  
+    .contact > div a{
+        font-size: .7em;
+    }
+
+    .quote, .company .quote{
+        width: 85%;
+    }
+
+    .quote span::before{
+        content: '\A'; 
+        white-space: pre;
+    }
+
+    .message  h1{
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 0;
+    }
+
+    .message p{
+        font-size: .8em;
+    }
+
+    .access div:first-child {
+        width: 90%;
+    }
+
+    .access h1{
+        padding: 0;
+        font-size: 1.5em;
+    }
+    .workflow-content{
+        width: 90%;
+        margin: auto;
+    }
+
+    .workflow-chart{
+        width: 22em;
+    }
+  
+}
+
+@media screen and (max-width: 780px){
+
+
+    .access div:last-child img{
+        width: 95%;
+    }
+
+    .content{
+        width: 85%;
+    }
+
+    .content h1{
+        font-size: 1.5em;
+    }
+
+    .content p{
+        font-size: 1.1em;
+    }
+    .contentImg{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+
+
+    .btnClass, .company .btnClass{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .btnClass {
+        height: 5em;
+    }
+
+    .company .btnClass{
+        height: 6em;
+    }
+
+    .btnClass > input{
+        width: 100%;
+        padding: 13px;
+    }
+
+    .company .btnClass input{
+        padding: 13px;
+    }
+
+    .quote p{
+        font-size: 1em;
+    }
+
+    .quote h1{
+        font-size: 1.3em;
+    }
+
+    span::before{
+        content: '\A'; 
+        white-space: pre;
+    }
+  
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+    }
+
+    .footer .media {
+        padding-top: 100px;
+        margin:0;
+
+    }
+
+    .footer .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .contact div{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    .footer div{
+        padding: 0;
+        margin:0;
+    }
+}
+
