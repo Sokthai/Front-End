@@ -179,7 +179,66 @@ main .more img{
 
 footer{
     border: 1px solid green;
+    background-image: url('./images/bg-pattern-footer-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    padding: 20px;
+    margin: auto;
 }
+
+footer .footer-top-container {
+    text-align: center;
+    /* border: 1px solid red; */
+    color: hsl(232, 13%, 33%);
+}
+
+footer .footer-top-container h1{
+    font-family: 'karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+
+}
+
+footer .footer-top-container i{
+    margin:  20px;
+    font-size: 20px;
+}
+
+footer .footer-top-container .fa-facebook{
+    background: gray;
+    color: whitesmoke;
+    border-radius: 2px;
+}
+
+footer .footer-list{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bolder;
+}
+
+
+footer .footer-list h5{
+    color: hsl(216, 30%, 68%);
+    font-size: 1.1em;
+    padding-top: 20px;
+    
+}
+
+footer  ul{
+    padding: 15px 0;
+    /* border: 1px solid red; */
+    text-align: center;
+    list-style-type: none;
+    color: black;
+}
+
+footer ul li{
+    padding: 10px 0;
+}
+
+
+
 
 
 header .nav nav{
