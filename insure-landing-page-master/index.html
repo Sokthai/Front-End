@@ -22,16 +22,22 @@
   <header>
     <div class="nav">
       <h1>insure</h1>
-      <nav>
-        <ul>
-          <li>How we work</li>
-          <li>Blog</li>
-          <li>Account</li>
-          <li>View plans</li>
-        </ul>
-      </nav>
-      <i class="fa fa-bars" id="idtoggleNavIcon"></i>
+      <!-- <a href="">How we work</a>
+      <a href="">Blog</a>
+      <a href="">Account</a>
+      <a href="">View plans</a> -->
+      <i class="fa fa-bars" id="idtoggleNavIcon" onclick="navbar()"></i>
     </div>
+
+
+    <nav class="topNav" id="navbar-hero">
+      <ul>
+        <li>How we work</li>
+        <li>Blog</li>
+        <li>Account</li>
+        <li>View plans</li>
+      </ul>
+    </nav>
 
     <div class="hero-img"></div>
     <div class="hero-intro">
@@ -159,5 +165,19 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+  <script>
+    function navbar(){
+      let x = document.getElementById("navbar-hero");
+      if (x.className === "topNav"){
+        x.className += "resposive";
+      }else{
+        x.className = "topNav";
+      }
+      
+    }
+    
+  </script>
 </body>
 </html>

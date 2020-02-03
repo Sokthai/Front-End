@@ -27,19 +27,21 @@ header .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 
 
 .nav i.fa{
     padding: 6px 12px;
-    border: 1px solid rgba(51, 51, 51, .7);
-    border-radius: 3px;
+    border-radius: 1px;
     color: rgba(51, 51, 51, .7);
 }
 
 .nav h1{
     font-size: 1.5em;
+    font-family: 'Karla';
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 header .hero-img{
@@ -143,7 +145,6 @@ main h1{
 
 
 main .more{
-    /* border: 1px solid green; */
     background-color: hsl(256, 26%, 20%);
     color: whitesmoke;
     text-align: center;
@@ -178,7 +179,6 @@ main .more img{
 
 
 footer{
-    border: 1px solid green;
     background-image: url('./images/bg-pattern-footer-mobile.svg');
     background-repeat: no-repeat;
     background-size: initial;
@@ -227,7 +227,6 @@ footer .footer-list h5{
 
 footer  ul{
     padding: 15px 0;
-    /* border: 1px solid red; */
     text-align: center;
     list-style-type: none;
     color: black;
@@ -241,6 +240,74 @@ footer ul li{
 
 
 
-header .nav nav{
+header .topNav{
     display: none;
+
+}
+
+#idtoggleNavIcon{
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+#navbar-hero{
+    /* text-align: center; */
+    
+    background: hsl(270, 9%, 17%);
+    background-image: url('./images/bg-pattern-mobile-nav.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 20px;
+}
+
+#navbar-hero ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+#navbar-hero ul li{
+    font-size: 1.3em;
+    display: block;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#navbar-hero ul li:last-child{
+    padding: 5px 90px;
+}
+
+#navbar-hero ul li:hover{
+    color: rgb(103, 192, 103);
+}
+
+.resposive{
+    display: block;
+}
+
+@media screen and (min-width: 750px){
+    #idtoggleNavIcon{
+        background: blue;
+    }
+
+    .hero-img{
+        border: 10px solid green;
+        width: 40vh;
+        height: 50px;
+        right: 0px;
+        
+        align-self: center ;
+    }
+
+    
+
+    
+
 }
