@@ -127,6 +127,7 @@ h1{
 
 .contentMessage {
     padding-left: 5em;
+    padding-top: 0px;
 }
 
 .message{
@@ -256,12 +257,15 @@ h1{
 
 /* footer styling */
 .footer{
-    /* background-color: teal; */
+    background-color: #f5f6f8;
     display: flex;
     justify-content: center;
     align-items: baseline;
-    padding: 100px 0 30px 0;
+    margin: 100px 0 0 0;
+    padding: 50px 0;
+    
 }
+
 
 .footerLogo{
     margin-right: 10%;
@@ -289,6 +293,7 @@ h1{
 .media img:nth-child(2){
     padding: 0 20px;
 }
+
 
 
 .contact {
@@ -322,6 +327,7 @@ h1{
 
 /* end footer */
 
+/* screen 1000px or less */
 @media screen and (max-width: 1000px){
     .contentLogo, .contentMessage, .message{
         flex-direction: column;
