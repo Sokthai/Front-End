@@ -9,6 +9,7 @@
 }
 header{
     background-color: pink;
+    
 }
 body{
     background-color: whitesmoke;
@@ -27,19 +28,21 @@ header .nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 15px 20px;
 }
 
 
 .nav i.fa{
     padding: 6px 12px;
-    border: 1px solid rgba(51, 51, 51, .7);
-    border-radius: 3px;
+    border-radius: 1px;
     color: rgba(51, 51, 51, .7);
 }
 
 .nav h1{
     font-size: 1.5em;
+    font-family: 'Karla';
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 header .hero-img{
@@ -110,12 +113,14 @@ header .hero-intro-text input{
 
 
 
-main{
+main, main .content-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
 }
+
+
 
 main .content{
     text-align: center;
@@ -143,7 +148,6 @@ main h1{
 
 
 main .more{
-    /* border: 1px solid green; */
     background-color: hsl(256, 26%, 20%);
     color: whitesmoke;
     text-align: center;
@@ -178,10 +182,194 @@ main .more img{
 
 
 footer{
-    border: 1px solid green;
+    background-image: url('./images/bg-pattern-footer-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: initial;
+    padding: 20px;
+    margin: auto;
+}
+
+footer .footer-top-container {
+    text-align: center;
+    /* border: 1px solid red; */
+    color: hsl(232, 13%, 33%);
+}
+
+footer .footer-top-container h1{
+    font-family: 'karla', sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+
+}
+
+footer .footer-top-container i{
+    margin:  20px;
+    font-size: 20px;
+}
+
+footer .footer-top-container .fa-facebook{
+    background: gray;
+    color: whitesmoke;
+    border-radius: 2px;
+}
+
+footer .footer-list{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bolder;
 }
 
 
-header .nav nav{
+footer .footer-list h5{
+    color: hsl(216, 30%, 68%);
+    font-size: 1.1em;
+    padding-top: 20px;
+    
+}
+
+footer  ul{
+    padding: 15px 0;
+    text-align: center;
+    list-style-type: none;
+    color: black;
+}
+
+footer ul li{
+    padding: 10px 0;
+}
+
+
+
+
+
+header .topNav{
     display: none;
+
+}
+
+#idtoggleNavIcon{
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+#navbar-hero{
+    /* text-align: center; */
+    
+    background: hsl(270, 9%, 17%);
+    background-image: url('./images/bg-pattern-mobile-nav.svg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    padding-top: 20px;
+}
+
+#navbar-hero ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+#navbar-hero ul li{
+    font-size: 1.3em;
+    display: block;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#navbar-hero ul li:last-child{
+    padding: 5px 90px;
+}
+
+#navbar-hero ul li:hover{
+    color: rgb(103, 192, 103);
+}
+
+.resposive{
+    display: block;
+}
+
+@media screen and (min-width: 750px){
+    /* #idtoggleNavIcon{
+        background: blue;
+    } */
+
+    header .hero-img{
+        position: absolute;
+        /* border: 10px solid green; */
+        z-index: 10;
+        width: 45vh;
+        height: 60vh;
+        top: 160px;
+        right: 5%;
+        float: right;
+        /* display: none; */
+        align-self: center ;
+        background-size: contain;;
+    }
+
+   
+    
+    header .hero-intro-text{
+        flex-grow: 0;
+        flex-basis: 90%;
+        width: 50%;
+        margin: 5%;
+        /* border: 10px solid green; */
+        text-align: left;
+
+    }
+
+    
+
+    header .hero-intro-text h1{
+      font-size: 3em;
+      line-height: 1;
+
+    }
+    main h1{
+        width: 85%;
+    }
+    main{
+        text-align: left;
+        /* border: 1px solid red; */
+    }
+
+   main .content-text{
+       flex-direction: row;
+       /* border: 1px solid blue; */
+       width: 85%;
+       text-align: left;
+   }
+
+   main .content-text .content{
+       text-align: left;
+   }
+
+   footer .company{
+       box-sizing: border-box;
+       display: flex;
+       flex-direction: row;
+       width: 85%;
+       margin: auto;
+       /* border: 1px solid red; */
+       justify-content: space-between;
+   }
+
+   footer .footer-list{
+       /* border: 1px solid blue; */
+       flex-basis: 25%;
+       flex-grow: 1;
+       text-align: left;
+   }
+
+  footer .footer-list ul{
+    text-align: left;
+   }
 }

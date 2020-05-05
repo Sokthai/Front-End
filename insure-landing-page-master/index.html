@@ -22,16 +22,22 @@
   <header>
     <div class="nav">
       <h1>insure</h1>
-      <nav>
-        <ul>
-          <li>How we work</li>
-          <li>Blog</li>
-          <li>Account</li>
-          <li>View plans</li>
-        </ul>
-      </nav>
-      <i class="fa fa-bars" id="idtoggleNavIcon"></i>
+      <!-- <a href="">How we work</a>
+      <a href="">Blog</a>
+      <a href="">Account</a>
+      <a href="">View plans</a> -->
+      <i class="fa fa-bars" id="idtoggleNavIcon" onclick="navbar()"></i>
     </div>
+
+
+    <nav class="topNav" id="navbar-hero">
+      <ul>
+        <li>How we work</li>
+        <li>Blog</li>
+        <li>Account</li>
+        <li class="button">View plans</li>
+      </ul>
+    </nav>
 
     <div class="hero-img"></div>
     <div class="hero-intro">
@@ -52,29 +58,31 @@
   <main>
     <hr>
     <h1>We’re different</h1>
+    <div class="content-text">
 
-    <div class="content">
-      <img src="./images/icon-snappy-process.svg" alt="">
-      <h2>Snappy Process</h2>
-      <p>Our application process can be completed in minutes, not hours. Don’t get 
-          stuck filling in tedious forms.</p>
+        
+        <div class="content">
+          <img src="./images/icon-snappy-process.svg" alt="">
+          <h2>Snappy Process</h2>
+          <p>Our application process can be completed in minutes, not hours. Don’t get 
+              stuck filling in tedious forms.</p>
+        </div>
+
+        <div class="content">
+          <img src="./images/icon-affordable-prices.svg" alt="">
+          <h2>Affordable Prices</h2>
+          <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+              but we still offer the best coverage possible.</p>
+        </div>
+
+        <div class="content">
+          <img src="./images/icon-people-first.svg" alt="">
+          <h2>People First</h2>
+          <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              sure you’re covered when you need it.</p>
+        </div>
+
     </div>
-
-    <div class="content">
-      <img src="./images/icon-affordable-prices.svg" alt="">
-      <h2>Affordable Prices</h2>
-      <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
-          but we still offer the best coverage possible.</p>
-    </div>
-
-    <div class="content">
-      <img src="./images/icon-people-first.svg" alt="">
-      <h2>People First</h2>
-      <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-          sure you’re covered when you need it.</p>
-    </div>
-
-
     <div class="more content">
       <h1>Find out more about how we work</h1>
       <input type="button"  class="button"  value="How we work">
@@ -95,42 +103,44 @@
 
     <hr>
 
-    <div class="footer-list">
-      <h5>Our company</h5>
-      <ul>
-        <li>How we work</li>
-        <li>Why Insure?</li>
-        <li>View plans</li>
-        <li>Reviews</li>
-      </ul>
-    </div>
+    <div class="company">
+        <div class="footer-list">
+          <h5>Our company</h5>
+          <ul>
+            <li>How we work</li>
+            <li>Why Insure?</li>
+            <li>View plans</li>
+            <li>Reviews</li>
+          </ul>
+        </div>
 
-    <div class="footer-list">
-      <h5>Help me</h2>
-      <ul>
-        <li>FAQ</li>
-        <li>Terms of use</li>
-        <li>Privacy policy</li>
-        <li>Cookies</li>
-      </ul>
-    </div>
+        <div class="footer-list">
+          <h5>Help me</h2>
+          <ul>
+            <li>FAQ</li>
+            <li>Terms of use</li>
+            <li>Privacy policy</li>
+            <li>Cookies</li>
+          </ul>
+        </div>
 
-    <div class="footer-list">
-      <h5>Contact</h5>
-      <ul>
-        <li>Sales</li>
-        <li>Support</li>
-        <li>Live chat</li>
-      </ul>
-    </div>
+        <div class="footer-list">
+          <h5>Contact</h5>
+          <ul>
+            <li>Sales</li>
+            <li>Support</li>
+            <li>Live chat</li>
+          </ul>
+        </div>
 
-    <div class="footer-list">
-      <h5>Others</h5>
-      <ul>
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Licenses</li>
-      </ul>
+        <div class="footer-list">
+          <h5>Others</h5>
+          <ul>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Licenses</li>
+          </ul>
+        </div>
     </div>
 
   </footer>
@@ -159,5 +169,19 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+  <script>
+    function navbar(){
+      let x = document.getElementById("navbar-hero");
+      if (x.className === "topNav"){
+        x.className += "resposive";
+      }else{
+        x.className = "topNav";
+      }
+      
+    }
+    
+  </script>
 </body>
 </html>
