@@ -6,7 +6,12 @@ h1 {
   font-family: Raleway;
   color: #34495e;
 }
-.container {
+div.item * {
+  box-sizing: border-box;
+}
+
+
+/* .container {
   display: flex;
   justify-content: center;
   border: 1px solid green;
@@ -14,8 +19,8 @@ h1 {
 
 div.item {
   position: relative;
-  /* float: left; */
-  /* overflow: hidden; */
+  float: left;
+  overflow: hidden;
   margin: 10px 1%;
   min-width: 220px;
   max-width: 310px;
@@ -26,9 +31,7 @@ div.item {
   border: 1px solid red;
 }
 
-/* div.item * {
-  box-sizing: border-box;
-} */
+
 
 div.item img {
   max-width: 100%;
@@ -49,13 +52,7 @@ div.item i {
   background: #ffffff;
 }
 
-div.item a {
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-}
+
 
 div.item.blue {
   background-color: #34495e;
@@ -87,7 +84,7 @@ div.item * {
 }
 
 div.item i {
-  transform: translate(-50%, -50%) scale(0);
+  transform:  translate(-50%, -50%) scale(1);
   transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
@@ -95,4 +92,90 @@ div.item:hover i {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
- 
+  */
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  border: 1px solid green;
+}
+
+.container .item{
+  /* float: left; */
+  text-align: center;
+  min-width: 220px;
+  max-width: 310px;
+  /* height: 350px; */
+  /* border: 1px solid red; */
+  margin: 10px 1%;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.container .item img{
+  width: 100%;
+  vertical-align: top;
+  height: 260px;
+}
+
+.container .item i{
+  position: absolute;
+  top: 50%;
+  left : 50%;
+  font-size: 34px;
+  background-color: aliceblue;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.container .red{
+  background-color: #e74c3c;
+}
+
+.container .blue{
+  background-color: #34495e;
+}
+
+.container .green{
+  background-color: #16a085;
+}
+
+
+.container .item.green i{
+  color: #16a085;
+}
+
+.container .item.red i{
+  color: #e74c3c;
+}
+
+
+div.item.blue i {
+  color: #34495e;
+}
+
+.container .item * {
+  transition: all .5s ease-in-out;
+}
+
+
+.container .item:hover img{
+  opacity: .3;
+  cursor: pointer;
+  filter:  grayscale(100%);
+}
+
+.container .item i{
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.container .item:hover i{
+  
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
