@@ -1,0 +1,82 @@
+body{
+    background-color: green;
+    margin:0;
+    box-sizing: border-box;
+}
+
+div.container{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.container *:not(a) {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+div.container a{
+    text-decoration: none;
+}
+
+div.container .body{
+    display: flex;
+    flex-direction: row;
+    /* flex-basis: 70%; */
+    min-height: 500px;
+
+}
+
+div.container .top, .footer{
+    flex-basis: 15%;
+}
+
+div.container .body .left, .body .aside{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 20%;
+    background-color: crimson;
+}
+
+div.container .body .main{
+    flex-flow: 2;
+    flex-shrink: 3;
+    flex-basis: 60%;
+    background-color: darkolivegreen;
+}
+
+div.container .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    background-color: chocolate;
+}
+
+div.container .footer{
+    background-color: chocolate;
+
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    div.container .body{
+        flex-direction: column;
+    }
+    div.container .body .main{
+        order: -1;
+        flex-grow: 1;
+        flex-basis: 70%;
+    }
+    div.container .body .left, .body .aside{
+        flex-basis: 10%;
+
+    }
+}
+

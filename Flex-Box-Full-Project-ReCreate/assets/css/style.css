@@ -1,0 +1,40 @@
+body{
+    background-color: green;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+div.container .frontPage{
+    min-width: 100vh;
+    background-color: palevioletred;
+    min-height: 100vh;
+    background-image: url('../img/main.jpg');
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+div.container .frontPage div{
+    border: 1px solid red;
+}
+
+div.container .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+
+
+div.container .nav > div{
+    flex-basis : 20%;
+    font-size: 25px;
+    background-color: pink;
+
+}
+
+div.container .nav:last-child a{
+    background-color: pink;
+}
+
