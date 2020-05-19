@@ -1,8 +1,17 @@
+:root{
+    --borderSize: 1px;
+}
+*{
+    box-sizing: border-box;
+
+}
+
 body{
     background-color: green;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    height: 500px;
 }
 
 div.container .frontPage{
@@ -12,17 +21,22 @@ div.container .frontPage{
     background-image: url('../img/main.jpg');
     text-transform: capitalize;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
 div.container .frontPage div{
-    border: 1px solid red;
+    border: var(--borderSize)  solid red;
 }
 
 div.container .nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 35px 90px;
+    animation: navbar 6s linear;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
 }
 
 
@@ -30,11 +44,99 @@ div.container .nav{
 div.container .nav > div{
     flex-basis : 20%;
     font-size: 25px;
-    background-color: pink;
+    opacity: .8;
 
 }
 
-div.container .nav:last-child a{
-    background-color: pink;
+div.container .nav div:last-child{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: flex-end;
 }
 
+div.container .nav div:last-child a{
+    padding-left: 15px;
+}
+
+div.frontPage div.quote{
+    padding-top: 60px;
+    flex-grow: 1;
+    border: var(--borderSize)  solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: var(--borderSize) solid red;
+    animation: moveUp 5s ease-out 0 1;
+}
+
+div.container{
+    height: 100vh;
+    border: var(--borderSize) solid purple;
+}
+
+div.frontPage .quote h1{
+    font-family: sans-serif;
+    font-size: 60px;
+    /* border: 1px solid red; */
+
+}
+
+div.frontPage .quote p{
+    margin-top: 0;
+    font-family: sans-serif;
+    /* background-color: red; */
+    font-size: 28px;
+}
+
+div.frontPage .group{
+    text-align: center;
+}
+
+.btn{
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+div.frontPage .btnContactMe{
+
+    padding: 20px 46px;
+    font-size: 16px;
+    background-color: #3f51b5;
+    color: whitesmoke;
+    text-align: center;
+    opacity: 1;
+    font-weight: bold;
+
+}
+
+div.frontPage .nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+@keyframes navbar{
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: .9;
+    }
+
+}
+
+@keyframes moveUp{
+    0%{
+        margin-top: 120px;
+        color: red;
+    }
+
+    50%{
+        margin-top: 0px;
+        color: blue;
+
+    }
+}
