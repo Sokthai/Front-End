@@ -1,5 +1,7 @@
 :root{
-    --borderSize: 1px;
+    --borderSize: 0px;
+    --borderContent : 0px;
+    --b : 1px;
 }
 *{
     box-sizing: border-box;
@@ -7,7 +9,7 @@
 }
 
 body{
-    background-color: green;
+    background-color: whitesmoke;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -91,6 +93,11 @@ div.frontPage .quote p{
 
 div.frontPage .group{
     text-align: center;
+    /* opacity: 0; */
+    animation: moveUp 5s 1 ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: .2s;
+
 }
 
 .btn{
@@ -131,12 +138,109 @@ div.frontPage .nav a{
 @keyframes moveUp{
     0%{
         margin-top: 120px;
-        color: red;
+        opacity: 0;
     }
 
-    50%{
+    30%{
         margin-top: 0px;
-        color: blue;
-
+        opacity: .9;
+    }
+    100%{
+        opacity: .9;
     }
 }
+
+
+
+
+/* mainContent */
+
+div.mainContent{
+    border: var(--borderContent) solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+div.mainContent .content{
+    color: #555555;
+    border: none;
+    font-family: bold 32px "Open Sans", sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    border: var(--borderContent) solid blue;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0 20px 0;
+}
+
+div.mainContent .content p{
+    width: 58%;
+    text-align: center;
+    border: var(--borderContent) solid blue;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px;
+    
+}
+
+div.mainContent .content hr{
+    
+    border: none;
+    width: 20%;
+    padding: 0;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #3f51b5;
+    margin: 50px 0 20px 0;
+}
+
+div.mainContent .content h1{
+    font: bold 32px "Open Sans", sans-serif;
+}
+
+
+div.mainContent .image{
+    min-width: 100%;
+    min-height: 200px;
+    flex-basis: 30%;
+    display: flex;
+    border: var(--b) solid purple;
+    justify-content: space-between;
+}
+
+div.mainContent .image .smallImage{
+    flex-basis:355px;
+    height: 350px;
+    border: var(--b) solid red;
+    padding: 10px;
+    overflow: hidden;
+}
+
+div.mainContent .image .smallImage img{
+    width: 100%;
+    border: var(--b) solid red;
+    height: 100%;
+   
+}   
+
+
+div.mainContent .image .bigImage{
+    flex-grow: 1;
+    padding: 10px;
+    border: var(--b) solid red;
+    flex-basis: 80%;
+    overflow: hidden;
+
+}
+
+div.mainContent .image .bigImage img{
+    width: 100%;
+    border: var(--b) solid red;
+    height: 100%;
+}   
+
