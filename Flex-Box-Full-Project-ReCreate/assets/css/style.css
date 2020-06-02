@@ -1,7 +1,8 @@
 :root{
     --borderSize: 0px;
     --borderContent : 0px;
-    --b : 1px;
+    --b : 0px;
+    --v : 0px;
 }
 *{
     box-sizing: border-box;
@@ -14,6 +15,7 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
     height: 500px;
+    color: #555555;
 }
 
 div.container .frontPage{
@@ -21,6 +23,8 @@ div.container .frontPage{
     background-color: palevioletred;
     min-height: 100vh;
     background-image: url('../img/main.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     text-transform: capitalize;
     color: #ffffff;
     display: flex;
@@ -61,14 +65,14 @@ div.container .nav div:last-child a{
 }
 
 div.frontPage div.quote{
-    padding-top: 60px;
+    padding-top: 200px;
     flex-grow: 1;
     border: var(--borderSize)  solid yellow;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border: var(--borderSize) solid red;
+    
     animation: moveUp 5s ease-out 0 1;
 }
 
@@ -151,7 +155,10 @@ div.frontPage .nav a{
 }
 
 
-
+div.container .content-body{
+    width: 80%;
+    margin: auto;
+}
 
 /* mainContent */
 
@@ -162,11 +169,11 @@ div.mainContent{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 10%;
+    /* padding: 0 10%; */
 }
 
-div.mainContent .content{
-    color: #555555;
+div.content-body .content{
+    
     border: none;
     font-family: bold 32px "Open Sans", sans-serif;
     text-transform: capitalize;
@@ -177,21 +184,22 @@ div.mainContent .content{
     padding: 90px 0 20px 0;
 }
 
-div.mainContent .content p{
+div.content-body .content p{
     width: 58%;
+    /* background: mediumaquamarine; */
     text-align: center;
     border: var(--borderContent) solid blue;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 30px;
     margin: 0px;
     
 }
 
-div.mainContent .content hr{
+div.content-body hr{
     
     border: none;
-    width: 20%;
+    width: 250px;
     padding: 0;
     height: 3px;
     border-radius: 3px;
@@ -244,3 +252,89 @@ div.mainContent .image .bigImage img{
     height: 100%;
 }   
 
+/* ------------content-------------------- */
+
+div.container .content{
+    margin-top: 150px;
+    border: var(--b) solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+div.container .content .context{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+div.content-body .content  div{
+    /* border: 1px solid salmon; */
+    flex-grow: 2;
+
+}
+
+div.content-body .content .content-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+    
+}
+
+
+
+.content .context p{
+    border: 1px solid olivedrab;
+    /* background-color: orange; */
+    text-align: center;
+}
+
+div.content  .content-item .content-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content .content-item .content-card p{
+    width: 80%;
+}
+
+.fa-4x{
+    color: rgb(93, 204, 176);
+}
+
+/* ----------------------testimonials-------------- */
+
+div.content-body .testimonials {
+    border: var(--v) solid salmon;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+div.content-body .testimonials hr{
+    margin: auto;
+    margin-top: 50px;
+}
+
+div.content-body .testimonials .quote{
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div.content-body .testimonials .author{
+    text-align: center;
+    font-size: 10px;
+    margin: auto;
+    margin-top: 10px;
+}
